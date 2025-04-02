@@ -19,7 +19,7 @@ resource "yandex_mdb_redis_cluster" "my_redis" {
   config {
     password = "supersecurepassword"
     version  = "8.0-valkey"
-    cluster_allow_pubsubshard_when_down = false
+    # cluster_allow_pubsubshard_when_down = false
   }
 
   resources {
