@@ -1,9 +1,7 @@
 # test-valkey-yandex-cloud
 
-# sentry with external kafka clickhouse postgres redis
-
 ```shell
-export YC_FOLDER_ID='xxx'
+export YC_FOLDER_ID='xxxx'
 terraform init
 terraform apply
 ```
