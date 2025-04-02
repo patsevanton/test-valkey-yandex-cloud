@@ -18,14 +18,14 @@ resource "yandex_mdb_redis_cluster" "my_redis" {
 
   config {
     password = "supersecurepassword"
-    version  = "8.0-valkey"
+    version  = "7.2-valkey"
     # cluster_allow_pubsubshard_when_down = false
   }
 
   resources {
     resource_preset_id = "hm2.medium"
     disk_type_id       = "network-ssd"
-    disk_size          = 10
+    disk_size          = 50
   }
 
   host {
